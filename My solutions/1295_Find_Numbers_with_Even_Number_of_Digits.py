@@ -22,5 +22,7 @@ class Solution:
             if (int(math.log10(num) + 1) % 2) == 0:
                 c += 1
         return c
+
+#This is just to test the solution
 o = Solution()
 print('asdasd', o.findNumbers( [12, 123, 1234, 123, 15]))
