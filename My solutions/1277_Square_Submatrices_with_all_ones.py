@@ -103,6 +103,7 @@ class Solution:
         return result
 
 
+
 # TEST CASE
 o = Solution()
 print(o.countSquares([[0,1,1,1],[1,1,1,1],[0,1,1,1]]))
