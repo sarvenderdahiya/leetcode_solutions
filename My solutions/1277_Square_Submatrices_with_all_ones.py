@@ -78,7 +78,7 @@ from typing import List
 # Memory Usage: 15.9 MB, less than 80.41% of Python3 online submissions
 
 
-# Dynamic Programming Solution O(n^2)
+# Dynamic Programming Solution O(mn)
 class Solution:
     def countSquares(self, matrix: List[List[int]]) -> int:
         if matrix is None or len(matrix) == 0:
