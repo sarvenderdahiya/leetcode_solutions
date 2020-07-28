@@ -1,7 +1,7 @@
 from typing import List
 
 
-# Time Limit Exceeded In this Solution O(n^4)
+# Time Limit Exceeded In this Solution O(n^4)  .... or O(mn^3) if m > n ... or O (m^3 n) if m < n
 # class Solution:
 #     def countSquares(self, matrix: List[List[int]]) -> int:
 #         squares = sum([sum(x) for x in matrix]) #individual 1s
