@@ -10,14 +10,25 @@
 
 from typing import List
 
+# ************ OLD OUTDATED SLOW NAIVE SOLUTION **********************
+# class Solution:
+#     def twoSum(self, nums: List[int], target: int) -> List[int]:
+#         x = 0
+#         for i in nums:
+#             y = 0
+#             for j in nums:
+#                 if target == (i + j) and x != y:
+#                     return x, y
+#                 y = y + 1
+#             x = x + 1
+
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        x = 0
-        for i in nums:
-            y = 0
-            for j in nums:
-                if target == (i + j) and x != y:
-                    return x, y
-                y = y + 1
-            x = x + 1
+        hashmap = {nums[0]: 0}
+
+        for k, v in enumerate(nums[1:], start=1):
+            if target - v in hashmap:
+                return [k, hashmap[target - v]]
+
+            hashmap[v] = k
